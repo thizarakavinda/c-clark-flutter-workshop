@@ -10,6 +10,9 @@ Future<void> main() async {
   await AppConfig.instance.init();
 
   runApp(
-    MultiProvider(providers: AppProviders.providers, child: const MyApp()),
+    MultiProvider(providers: AppProviders.providers, child: const MyApp(
+    
+    )),
+    
   );
 }
