@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../core/constants/constants.dart';
-import '../core/utils/utils.dart';
 
 class ThemeProvider extends ChangeNotifier {
   ThemeMode _themeMode = ThemeMode.system;
@@ -59,26 +57,26 @@ class ThemeProvider extends ChangeNotifier {
     return _themeMode == ThemeMode.dark;
   }
 
-  String _themeModeToString(ThemeMode mode) {
-    switch (mode) {
-      case ThemeMode.light:
-        return 'light';
-      case ThemeMode.dark:
-        return 'dark';
-      case ThemeMode.system:
-        return 'system';
-    }
-  }
+  // String _themeModeToString(ThemeMode mode) {
+  //   switch (mode) {
+  //     case ThemeMode.light:
+  //       return 'light';
+  //     case ThemeMode.dark:
+  //       return 'dark';
+  //     case ThemeMode.system:
+  //       return 'system';
+  //   }
+  // }
 
-  ThemeMode _themeModeFromString(String? value) {
-    switch (value) {
-      case 'light':
-        return ThemeMode.light;
-      case 'dark':
-        return ThemeMode.dark;
-      case 'system':
-      default:
-        return ThemeMode.system;
-    }
-  }
+  // ThemeMode _themeModeFromString(String? value) {
+  //   switch (value) {
+  //     case 'light':
+  //       return ThemeMode.light;
+  //     case 'dark':
+  //       return ThemeMode.dark;
+  //     case 'system':
+  //     default:
+  //       return ThemeMode.system;
+  //   }
+  // }
 }

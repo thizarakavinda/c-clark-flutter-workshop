@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../core/constants/constants.dart';
-import '../core/extensions/context_extensions.dart';
 import 'app_routes.dart';
 
 class AppRouter {
