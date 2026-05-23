@@ -1,3 +1,5 @@
+import 'package:c_clark_workshop/features/onboarding/screens/onboard_screen.dart';
+import 'package:c_clark_workshop/features/splash/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import '../core/constants/constants.dart';
 import 'app_routes.dart';
@@ -8,7 +10,9 @@ class AppRouter {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case AppRoutes.initial:
-        return _buildRoute(settings, const _RouteNotFoundScreen());
+        return _buildRoute(settings, const SplashScreen());
+      case AppRoutes.onboarding:
+        return _buildRoute(settings, const OnboardScreen());
       default:
         return _buildRoute(settings, const _RouteNotFoundScreen());
     }
