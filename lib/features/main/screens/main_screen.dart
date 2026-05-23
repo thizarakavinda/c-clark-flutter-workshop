@@ -11,7 +11,15 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home), 
+            label: 'Home',
+            ),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+        ],
+      ),
     );
   }
 }
